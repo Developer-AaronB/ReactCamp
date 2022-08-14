@@ -8,7 +8,7 @@ const CampsitesList = () => {
       {CAMPSITES.map((campsite) => {
         return (
           <Col md="5" className="m-4" key={campsite.id}>
-            <CampsiteCard campsite={campsite}></CampsiteCard>
+            <CampsiteCard campsite={campsite}/>
           </Col>
         );
       })}
