@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import CampsitesDirectoryPage from "./features/campsites/CampsitesList";
+import CampsitesDirectoryPage from "./pages/CampsitesDirectoryPage";
 import "./App.css";
 
 
