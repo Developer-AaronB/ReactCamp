@@ -17,7 +17,7 @@ const CampsitesDirectoryPage = () => {
                 </Col>
             </Row>
         </Container>
-    )
+    );
 };
 
 export default CampsitesDirectoryPage;
