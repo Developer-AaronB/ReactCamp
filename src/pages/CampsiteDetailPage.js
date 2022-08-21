@@ -1,19 +1,19 @@
-import { Container, Row } from 'reactstrap';
-import { useParams } from 'react-router-dom';
-import { selectCampsiteById } from '../features/campsites/campsitesSlice';
-import CampsiteDetail from '../features/campsites/CampsiteDetail';
+import { Container, Row } from "reactstrap";
+import { useParams } from "react-router-dom";
+import { selectCampsiteBySlug } from "../features/campsites/campsitesSlice";
+import CampsiteDetail from "../features/campsites/CampsiteDetail";
 
 const CampsiteDetailPage = () => {
-    const { campsiteId } = useParams();
-    const campsite = selectCampsiteById(campsiteId);
+  const { slug } = useParams();
+  const campsite = selectCampsiteBySlug(slug);
 
-    return (
-        <Container>
-            <Row>
-                <CampsiteDetail campsite={campsite} />
-            </Row>
-        </Container>
-    )
+  return (
+    <Container>
+      <Row>
+        <CampsiteDetail campsite={campsite} />
+      </Row>
+    </Container>
+  );
 };
 
 export default CampsiteDetailPage;

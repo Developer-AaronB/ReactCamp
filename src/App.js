@@ -1,10 +1,10 @@
-import { Routes, Route } from 'react-router-dom'
-import ContactPage from './pages/ContactPage';
-import HomePage from './pages/HomePage';
+import { Routes, Route } from "react-router-dom";
+import ContactPage from "./pages/ContactPage";
+import HomePage from "./pages/HomePage";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CampsitesDirectoryPage from "./pages/CampsitesDirectoryPage";
-import CampsiteDetailPage from './pages/CampsiteDetailPage';
+import CampsiteDetailPage from "./pages/CampsiteDetailPage";
 import "./App.css";
 import Quantity from "./components/quantity";
 
@@ -12,15 +12,15 @@ function App() {
   return (
     <div className="App">
       <Header />
-        <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='contact' element={<ContactPage />} />
-            <Route path='directory' element={<CampsitesDirectoryPage />} />
-            <Route
-                path='directory/:campsiteId'
-                element={<CampsiteDetailPage />}
-            />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="directory" element={<CampsitesDirectoryPage />} />
+        <Route
+          path="directory/:slug"
+          element={<CampsiteDetailPage />}
+        />
+      </Routes>
       <Footer />
     </div>
   );
