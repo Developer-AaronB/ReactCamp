@@ -4,6 +4,9 @@ import { selectCampsiteBySlug } from "../features/campsites/campsitesSlice";
 import CampsiteDetail from "../features/campsites/CampsiteDetail";
 import CommentsList from '../features/comments/CommentsList';
 import { selectCommentsByCampsiteId } from "../features/comments/commentsSlice";
+
+
+
 const CampsiteDetailPage = () => {
   const { slug, campsiteId } = useParams();
   const campsite = selectCampsiteBySlug(slug);
