@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import CampsitesDirectoryPage from "./pages/CampsitesDirectoryPage";
 import CampsiteDetailPage from "./pages/CampsiteDetailPage";
 import "./App.css";
-import Quantity from "./components/quantity";
 
 const App = () => {
   return (

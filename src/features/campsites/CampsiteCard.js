@@ -2,7 +2,6 @@ import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
 import { Link } from "react-router-dom";
 
 const CampsiteCard = ({ campsite }) => {
-  // const { campsite } = props;
   const { slug, image, name } = campsite;
   return (
     <Link to={`/directory/${slug}`}>
