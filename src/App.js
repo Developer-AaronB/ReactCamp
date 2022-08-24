@@ -9,7 +9,7 @@ import CampsiteDetailPage from "./pages/CampsiteDetailPage";
 import "./App.css";
 import Quantity from "./components/quantity";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Header />
@@ -18,14 +18,11 @@ function App() {
         <Route path="contact" element={<ContactPage />} />
         <Route path="about" element={<AboutPage />} />
         <Route path="directory" element={<CampsitesDirectoryPage />} />
-        <Route
-          path="directory/:slug"
-          element={<CampsiteDetailPage />}
-        />
+        <Route path="directory/:slug" element={<CampsiteDetailPage />} />
       </Routes>
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
