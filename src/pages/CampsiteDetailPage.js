@@ -7,7 +7,7 @@ import { selectCommentsByCampsiteId } from "../features/comments/commentsSlice";
 const CampsiteDetailPage = () => {
   const { slug, campsiteId } = useParams();
   const campsite = selectCampsiteBySlug(slug);
-  const campsiteComments = selectCommentsByCampsiteId(campsiteId)
+  const campsiteComments = selectCommentsByCampsiteId(campsiteId);
   return (
     <Container>
       <Row>
