@@ -19,14 +19,14 @@ const CommentForm = ({ campsiteId }) => {
     };
 return (
   <>
-    <Button prop="outline" onClick={() => setModalOpen(true)}>
+    <Button outline onClick={() => setModalOpen(true)}>
       <i className="fa fa-pencil fa-lg" /> Add Comment
     </Button>
     <Modal isOpen={modalOpen}>
       <ModalHeader toggle={() => setModalOpen(false)}>Add Comment</ModalHeader>
       <ModalBody>
         <Formik
-          initialValues={{ rating: "undefined", author: "", commentText: "" }}
+          initialValues={{ rating: undefined, author: "", commentText: "" }}
           onSubmit={handleSubmit}
           validate={validateCommentForm}
         >
@@ -42,7 +42,7 @@ return (
                 <option>5</option>
               </Field>
               <ErrorMessage name="rating">
-                {(msg) => <p className='text-danger'>{msg}</p>}
+                {(msg) => <p className="text-danger">{msg}</p>}
               </ErrorMessage>
             </FormGroup>
             <FormGroup>
@@ -53,7 +53,7 @@ return (
                 className="form-control"
               />
               <ErrorMessage name="author">
-                {(msg) => <p className='text-danger'>{msg}</p>}
+                {(msg) => <p className="text-danger">{msg}</p>}
               </ErrorMessage>
             </FormGroup>
             <FormGroup>
