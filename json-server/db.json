@@ -2,6 +2,7 @@
   "campsites": [
     {
       "id": 0,
+      "slug": "react-lake",
       "name": "React Lake Campground",
       "image": "images/react-lake.jpg",
       "elevation": 1233,
@@ -10,6 +11,7 @@
     },
     {
       "id": 1,
+      "slug": "chrome-river",
       "name": "Chrome River Campground",
       "image": "images/chrome-river.jpg",
       "elevation": 877,
@@ -18,6 +20,7 @@
     },
     {
       "id": 2,
+      "slug": "breadcrumb-trail",
       "name": "Breadcrumb Trail Campground",
       "image": "images/breadcrumb-trail.jpg",
       "elevation": 2901,
@@ -26,6 +29,7 @@
     },
     {
       "id": 3,
+      "slug": "redux-woods",
       "name": "Redux Woods Campground",
       "image": "images/redux-woods.jpg",
       "elevation": 42,

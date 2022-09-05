@@ -28,6 +28,7 @@ const CampsitesList = () => {
     );
   }
 
+
   return (
     <Row className="ms-auto">
       {campsites.map((campsite) => {
